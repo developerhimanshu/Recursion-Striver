@@ -19,7 +19,7 @@ void combinationSum(int ind, int target, vector<int>&arr, vector<int>&ds, vector
 }
 
 vector<vector<int>>combinationSum2(vector<int>&candidate, int target) {
-	sort(candidate.begin(), candidate.end());
+	sort(candidate.begin(), candidate.end());  // We are sorting the array because we need the sorted combination in lexicographical order
 	vector<vector<int>>ans;
 	vector<int>ds;
 	combinationSum(0, target, candidate, ds, ans);
